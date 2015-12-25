@@ -1,0 +1,1 @@
+GeometryTrainer.ApplicationController = Ember.Controller.extend {}

@@ -1,0 +1,1 @@
+GeometryTrainer.Store = DS.Store.extend

@@ -1,0 +1,13 @@
+<div>
+  <p>Новый прямоугольник</p>
+  <form>
+    
+    Ширина: {{input type="number" name="width" value=width}}
+    <br />
+    Высота: {{input type="number" value=height name="height"}}
+    <br />
+    Цвет: {{input type="text" value=fillColor name="fillColor"}}
+    <button {{action "submit" this}}>Submit</button>
+  </form>
+  {{#link-to "rectangles"}}Прямоугольники{{/link-to}}
+</div>

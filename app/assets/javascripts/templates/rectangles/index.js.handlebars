@@ -1,0 +1,23 @@
+<p>Rectangles/index.hbs</p>
+
+{{#each model as |item|}}
+  <div>
+    <p>{{item.width}}</p>
+    <a href="#" {{action "destroy" item}}>Удал</a>
+    {{#link-to "rectangle.edit" item}}Редактировать{{/link-to}}
+  </div>
+{{/each}}
+
+{{title}}
+{{uder}}
+<svg width="980" height="180">
+  
+  {{#each model as |item index|}}
+    <g>
+      <rect x="40" y="150" width="80" height="50" style="fill: {{model.fillColor}}" />
+      <text dx="17.5" dy="31.4" {{bindValue model.width}}></text>
+    </g>
+    <a {{action "destroy" item}}>Удалить</a>
+  {{/each}}
+</svg>
+{{outlet}}
